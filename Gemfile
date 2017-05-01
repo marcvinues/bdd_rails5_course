@@ -34,14 +34,14 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'rake', '< 11.0'
 group :development, :test do
   gem 'rspec-rails', '3.1.0'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
 group :test do
-gem 'capybara', '2.7.1'
+  gem 'capybara', '2.7.1'
 end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
